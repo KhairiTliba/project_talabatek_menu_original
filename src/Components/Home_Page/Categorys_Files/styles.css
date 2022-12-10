@@ -1,0 +1,103 @@
+.CATEGORYS{
+    padding: 60px 100px;    
+}
+.CATEGORYS .title{
+    font-size: 2.6rem;
+}
+.categorys{
+    max-width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    cursor: grab;
+}
+
+
+.categorys::-webkit-scrollbar {
+    background-color: rgb(30, 34, 78 , 0.2);
+    border-radius: 20px;
+    height: 10px;
+}
+.categorys::-webkit-scrollbar-thumb{
+    background: rgb(7, 10, 56 , 0.6);
+    border-radius: 20px;
+}
+
+.categorys button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 280px;
+    height: 70px;
+    border-radius: 140px;
+    background-color: rgb(30, 34, 78);
+    border: rgb(30, 34, 78);
+    margin-right: 20px ;
+    margin-bottom: 20px ;
+    color: white;
+    transition: 0.6s ease-in-out;
+}
+.categorys button:hover{
+    background-color: rgb(255, 191, 0);
+    cursor: grabbing;
+}
+.icon{
+    position: relative;
+    width: 60px ;
+    height: 100%;
+    margin: auto 18px;
+}
+.icon .img{
+    z-index: 2;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+}
+.icon .circle{
+    z-index: 0;
+    position: absolute;
+    bottom: 3px;
+    left: -6px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    border-bottom-right-radius: 10px;
+    width: 120%;
+    height: 88%;
+}
+@media only screen and (max-width: 820px) {
+
+    .CATEGORYS{
+        padding: 20px 14px;
+        
+    }
+    .CATEGORYS .title{
+        font-size: 2rem;
+    }
+    .categorys::-webkit-scrollbar{
+        display: none;
+    }
+    .categorys .category{
+        width: 170px;
+        height: 60px;
+        border-radius: 30px;
+        margin-right: 10px ;
+        margin-bottom: 16px ;
+        font-size: 0.58rem;
+    }
+    .icon{
+        position: relative;
+        width: 60px ;
+        height: 100%;
+        margin: auto 0px;        
+    }
+
+    .icon .circle{
+        width: 60px;
+        bottom: 4px;
+        height: 50px;
+    }
+  }
+  
